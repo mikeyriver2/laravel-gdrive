@@ -45,7 +45,7 @@ return [
 
         'extDisk' => [
             'driver' => 'local',
-            'root' => '/home/mikey/'
+            'root' => '/media/rivera/'
         ],
 
         'local' => [
