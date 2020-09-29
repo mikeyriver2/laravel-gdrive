@@ -18,10 +18,10 @@ Route::get('/', function () {
     $dir = '/';
     $recursive = false; // Get subdirectories also?
     $contentsGoogle = Storage::cloud()->listContents($dir, $recursive);
-    $content = Storage::get('DD Dinosaur.mp4');
+    // $content = Storage::get('DD Dinosaur.mp4');
 
-    Storage::cloud()->put('movie.mp4',$content);
-    // dd($contents);
+    // Storage::cloud()->put('movie.mp4',$content);
+    dd(Storage::disk('extDisk')->allFiles('./Downloads'));
 
     //return $contents->where('type', '=', 'dir'); // directories
     //return $contents->where('type', '=', 'file'); // files

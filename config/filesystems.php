@@ -43,6 +43,11 @@ return [
 
     'disks' => [
 
+        'extDisk' => [
+            'driver' => 'local',
+            'root' => '/home/mikey/'
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
