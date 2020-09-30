@@ -21,7 +21,7 @@ Route::get('/', function () {
     // $content = Storage::get('DD Dinosaur.mp4');
 
     // Storage::cloud()->put('movie.mp4',$content);
-    dd(Storage::disk('extDisk')->allFiles('./Downloads'));
+    dd(Storage::disk('extDisk')->allFiles('./Documents/official-alumni/node_modules'));
 
     //return $contents->where('type', '=', 'dir'); // directories
     //return $contents->where('type', '=', 'file'); // files
