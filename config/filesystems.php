@@ -45,12 +45,8 @@ return [
 
         'extDisk' => [
             'driver' => 'local',
-<<<<<<< HEAD
-            'root' => '/home/mikey/',
+            'root' => env('EXT_DISK_ROOM','/media/rivera/'),
             'links' => 'skip'
-=======
-            'root' => '/media/rivera/'
->>>>>>> cdc68898b9da3dd4b4ea89956a27bdc7d20d407c
         ],
 
         'local' => [
